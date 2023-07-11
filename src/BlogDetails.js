@@ -21,9 +21,9 @@ const BlogDetails = () => {
       { blog && (
         <article>
           <h2>{ blog.title }</h2>
-          <p>Written by { blog.author }</p>
+          <p>Review written by { blog.author }</p>
           <div>{ blog.body }</div>
-          <button onClick={handleClick}>delete</button>
+          <button onClick={handleClick}>Delete</button>
         </article>
       )}
     </div>
