@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { data: blog, error, isPending } = useFetch('https://tubular-granita-a79820.netlify.app' + id);
+  const { data: blog, error, isPending } = useFetch('https://tubular-granita-a79820.netlify.app/blog' + id);
   const history = useHistory();
 
   const handleClick = () => {
-    fetch('https://tubular-granita-a79820.netlify.app' + blog.id, {
+    fetch('https://tubular-granita-a79820.netlify.app/blog' + blog.id, {
       method: 'DELETE'
     }).then(() => {
       history.push('/');
