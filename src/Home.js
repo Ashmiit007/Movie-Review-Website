@@ -2,7 +2,7 @@ import BlogList from "./BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const { error, isPending, data: blogs } = useFetch('https://tubular-granita-a79820.netlify.app/blog')
+  const { error, isPending, data: blogs } = useFetch('https://tubular-granita-a79820.netlify.app/blogs')
 
   return (
     
